@@ -1,0 +1,354 @@
+/* Root Variables */
+:root {
+    --primary-color: #FFB347;    /* Warm yellow */
+    --secondary-color: #FF69B4;  /* Hot pink */
+    --accent-color: #FF8C69;     /* Salmon pink */
+    --text-color: #333;
+    --light-text: #666;
+    --white: #fff;
+    --border-radius: 10px;
+    --transition: all 0.3s ease;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link.btn-primary {
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: none;
+}
+
+.nav-link.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../assets/images/backgrounds/photo-1531058020387-3be344556be6.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Feature Cards */
+.feature-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.feature-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.feature-content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.feature-card:hover .feature-image {
+    transform: scale(1.05);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Event Type Cards */
+.event-type-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.event-type-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.event-type-card:hover .event-overlay {
+    transform: translateY(0);
+}
+
+.event-type-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    position: relative;
+    padding-top: 60px;
+    margin-top: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+    padding: 60px 20px 20px;
+    text-align: center;
+}
+
+/* CTA Section */
+.cta-section {
+    position: relative;
+    background-image: url('../assets/images/backgrounds/photo-1469371670807-013ccf25f16a.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    color: white;
+}
+
+.cta-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Section Styles */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: var(--light-text);
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+.footer-section {
+    background: #333;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .feature-image {
+        height: 200px;
+    }
+    
+    .event-type-card img {
+        height: 250px;
+    }
+    
+    .testimonial-img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+    
+    .testimonial-content {
+        padding-top: 50px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-section {
+        min-height: 80vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .hero-section {
+        min-height: 70vh;
+    }
+}

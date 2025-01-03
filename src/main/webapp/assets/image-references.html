@@ -1,0 +1,115 @@
+<!--
+This file contains references to all images and icons used in the EventHub platform.
+Download these images from the provided URLs and save them in the corresponding directories.
+-->
+
+<!-- Event Type Images (save in assets/images/events/) -->
+1. Corporate Events:
+- corporate-1.jpg: https://images.unsplash.com/photo-1519167758481-83f550bb49b3
+- corporate-2.jpg: https://images.unsplash.com/photo-1544928147-79a2dbc1f389
+- corporate-3.jpg: https://images.unsplash.com/photo-1511578314322-379afb476865
+
+2. Weddings:
+- wedding-1.jpg: https://images.unsplash.com/photo-1532712938310-34cb3982ef74
+- wedding-2.jpg: https://images.unsplash.com/photo-1519741497674-611481863552
+- wedding-3.jpg: https://images.unsplash.com/photo-1519225421980-715cb0215aed
+
+3. Conferences:
+- conference-1.jpg: https://images.unsplash.com/photo-1540575467063-178a50c2df87
+- conference-2.jpg: https://images.unsplash.com/photo-1505373877841-8d25f7d46678
+- conference-3.jpg: https://images.unsplash.com/photo-1515187029135-18ee286d815b
+
+4. Social Events:
+- social-1.jpg: https://images.unsplash.com/photo-1492684223066-81342ee5ff30
+- social-2.jpg: https://images.unsplash.com/photo-1496337589254-7e19d01cec44
+- social-3.jpg: https://images.unsplash.com/photo-1530103862676-de8c9debad1d
+
+<!-- Background Images (save in assets/images/backgrounds/) -->
+1. Hero Backgrounds:
+- hero-bg-1.jpg: https://images.unsplash.com/photo-1531058020387-3be344556be6
+- hero-bg-2.jpg: https://images.unsplash.com/photo-1469371670807-013ccf25f16a
+- gradient-bg.svg: https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/
+
+2. Section Backgrounds:
+- pattern-1.svg: https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/
+- pattern-2.svg: https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/
+- texture-1.jpg: https://www.transparenttextures.com/patterns/45-degree-fabric-light.png
+
+<!-- Testimonial Images (save in assets/images/testimonials/) -->
+1. Client Photos:
+- client-1.jpg: https://images.unsplash.com/photo-1494790108377-be9c29b29330
+- client-2.jpg: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d
+- client-3.jpg: https://images.unsplash.com/photo-1438761681033-6461ffad8d80
+- client-4.jpg: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e
+
+<!-- Icons (save in assets/icons/) -->
+1. Feature Icons (Download as SVG):
+- calendar.svg: https://fontawesome.com/icons/calendar
+- users.svg: https://fontawesome.com/icons/users
+- chart-line.svg: https://fontawesome.com/icons/chart-line
+- mobile.svg: https://fontawesome.com/icons/mobile
+- ticket.svg: https://fontawesome.com/icons/ticket
+- envelope.svg: https://fontawesome.com/icons/envelope
+- clock.svg: https://fontawesome.com/icons/clock
+- location.svg: https://fontawesome.com/icons/location-dot
+
+2. Social Media Icons:
+- facebook.svg: https://fontawesome.com/icons/facebook
+- twitter.svg: https://fontawesome.com/icons/twitter
+- instagram.svg: https://fontawesome.com/icons/instagram
+- linkedin.svg: https://fontawesome.com/icons/linkedin
+
+3. UI Icons:
+- search.svg: https://fontawesome.com/icons/search
+- menu.svg: https://fontawesome.com/icons/bars
+- close.svg: https://fontawesome.com/icons/xmark
+- arrow-right.svg: https://fontawesome.com/icons/arrow-right
+- check.svg: https://fontawesome.com/icons/check
+- star.svg: https://fontawesome.com/icons/star
+
+4. Event Type Icons:
+- corporate.svg: https://fontawesome.com/icons/building
+- wedding.svg: https://fontawesome.com/icons/rings-wedding
+- conference.svg: https://fontawesome.com/icons/users-rectangle
+- party.svg: https://fontawesome.com/icons/champagne-glasses
+
+5. Feature Icons:
+- planning.svg: https://fontawesome.com/icons/list-check
+- analytics.svg: https://fontawesome.com/icons/chart-pie
+- notification.svg: https://fontawesome.com/icons/bell
+- payment.svg: https://fontawesome.com/icons/credit-card
+- support.svg: https://fontawesome.com/icons/headset
+- security.svg: https://fontawesome.com/icons/shield-halved
+
+<!-- Usage Instructions -->
+1. Download all images from the provided Unsplash links
+2. Save them in their respective directories with the specified names
+3. Download icons from Font Awesome or use their CDN
+4. Optimize images for web use (recommended max width: 1920px)
+5. Convert icons to SVG format for better quality
+6. Ensure all images have proper alt text when used
+7. Implement lazy loading for better performance
+
+<!-- Image Optimization Tools -->
+1. Use https://squoosh.app/ for image compression
+2. Use https://jakearchibald.github.io/svgomg/ for SVG optimization
+3. Implement lazy loading using loading="lazy" attribute
+4. Use srcset for responsive images
+5. Consider using WebP format with fallback for better performance
+
+<!-- Icon Usage Example -->
+<i class="fas fa-calendar"></i> <!-- Using Font Awesome CDN -->
+<img src="assets/icons/calendar.svg" alt="Calendar"> <!-- Using local SVG -->
+
+<!-- Background Pattern Usage -->
+<div class="hero-section" style="background-image: url('assets/images/backgrounds/hero-bg-1.jpg')">
+    <!-- Content -->
+</div>
+
+<!-- Responsive Image Usage -->
+<img src="assets/images/events/conference-1.jpg"
+     srcset="assets/images/events/conference-1-small.jpg 300w,
+             assets/images/events/conference-1.jpg 800w"
+     sizes="(max-width: 600px) 300px, 800px"
+     alt="Conference Event"
+     loading="lazy">
